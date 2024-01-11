@@ -1,0 +1,21 @@
+deploymentgroup_name = "Practica-deployment"
+az_org_url_path = "https://dev.azure.com/estefa932014/"
+project_name = "Practica-pragma"
+az_devops_pat = "4t6utcskaf6whq5snh6rebwtubxqjn5jqgpxpbdw4wa7mkpw56uq"
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/jammy64"
+  config.vm.boot_timeout = 400
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 3096
+    vb.cpus = 3
+    vb.customize ["modifyvm", :id, "--uart1", "0x3F8", "4"]
+    vb.customize ["modifyvm", :id, "--uartmode1", "file", File::NULL]
+  end
+
+  config.vm.provision "shell",
+    path: "./../install_deploymentgroup.sh",
+    args: "#{deploymentgroup_name} #{az_org_url_path} #{project_name} #{az_devops_pat}"
+end
