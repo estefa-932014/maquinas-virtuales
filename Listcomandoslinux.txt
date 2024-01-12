@@ -1,0 +1,31 @@
+ls: Lista los archivos y directorios en el directorio actual.
+cd: Cambia el directorio actual.
+pwd: Muestra la ruta completa del directorio actual.
+mkdir: Crea un nuevo directorio.
+rmdir: Elimina un directorio vacío.
+touch: Crea un archivo vacío.
+cp: Copia archivos o directorios.
+mv: Mueve o renombra archivos y directorios.
+rm: Elimina archivos o directorios.
+cat: Muestra el contenido de un archivo.
+more y less: Permite ver archivos de texto uno página a la vez.
+head y tail: Muestra las primeras o últimas líneas de un archivo.
+grep: Busca texto en archivos.
+find: Busca archivos y directorios en el sistema de archivos.
+tar: Comprime y descomprime archivos.
+zip y unzip: Crea y extrae archivos comprimidos en formato ZIP.
+chmod: Cambia los permisos de un archivo o directorio.
+chown: Cambia el propietario de un archivo o directorio.
+ps: Muestra información sobre los procesos en ejecución.
+top: Muestra información en tiempo real sobre los procesos y el uso de recursos.
+kill: Termina un proceso en ejecución.
+df: Muestra el espacio en disco utilizado y disponible.
+du: Muestra el uso del espacio en disco de directorios y archivos.
+ifconfig: Muestra información sobre las interfaces de red.
+ping: Envía paquetes de prueba a una dirección IP para verificar la conectividad de red.
+ssh: Inicia una sesión segura de Shell en un servidor remoto.
+scp: Copia archivos de forma segura entre sistemas a través de SSH.
+wget: Descarga archivos desde la web.
+curl: Realiza solicitudes a través de URL, útil para interacciones con servicios web.
+man: Muestra el manual de usuario para un comando específico.
+history: Muestra el historial de comandos utilizados previamente en la terminal.
