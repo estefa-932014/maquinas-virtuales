@@ -11,8 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 8000, host: 1256 #alternative port
   config.vm.network "forwarded_port", guest: 3306, host: 1260 #mysql
   config.vm.hostname = "pruebas-practicas"
-  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
-  #config.vm.synced_folder ".", "/syncd", disabled: false
+  config.vm.synced_folder ".", "/syncd", disabled: false
   config.vm.disk :disk, size: "50GB", primary: true
   config.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
