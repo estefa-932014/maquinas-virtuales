@@ -24,6 +24,12 @@ Resetea la máquina virtual a su estado inicial y vuelve a lanzar el script de a
 vagrant destroy 
 Borra la máquina y el disco virtual creado, aunque conserva el box de inicio.
 
+vagrant box remove <name>
+Elimina una VM del Vagrant.
+
+vagrant halt      
+Apaga una VM.
+
 comandos:
 systemctl list-unit-files --type=service | grep  vsts
 
