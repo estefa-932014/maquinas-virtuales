@@ -1,0 +1,8 @@
+mariadb -h localhost -u codeuser -pcodepass devopstravel
+select user(),current_user();
+SHOW TABLES;
+select * from user;
+docker build -t apache:1.0 -f ./web/Dockerfile .
+docker build -t db:1.0 -f ./db/Dockerfile .
+docker exec -ti b9bbf06110eb bash
+docker-compose up -d --build
